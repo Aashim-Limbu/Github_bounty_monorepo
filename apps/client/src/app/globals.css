@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+body {
+  width: 100dvw;
+  overflow-x: hidden;
+  font-family: "Round", sans-serif;
+  background-color: black;
+  text-color: white;
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+  .col-center {
+    @apply flex flex-col justify-center items-center;
+  }
+  .abs-center {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+  }
+}
+@layer components {
+  main {
+    @apply w-dvw overflow-x-hidden;
+  }
+  nav {
+    @apply fixed top-0 left-0 w-full flex justify-between items-center z-[100] py-4 bg-gray-800/50 backdrop-blur-2xl;
+  }
+}

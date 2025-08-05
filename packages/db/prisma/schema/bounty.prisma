@@ -1,0 +1,11 @@
+model Bounty {
+    id         Int      @id @default(autoincrement())
+    issueId    BigInt      @unique
+    repo       String
+    amount     Float
+    recipient  String?
+    claimed    Boolean  @default(false)
+    paidTxHash String?
+    createdAt  DateTime @default(now())
+    updatedAt  DateTime @updatedAt
+}

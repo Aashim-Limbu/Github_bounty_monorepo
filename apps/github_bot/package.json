@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --watch . --ext ts --exec ts-node src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@repo/db": "*",
+    "@repo/typescript-config": "*",
+    "@types/express": "^5.0.3",
+    "dotenv": "^16.0.3",
+    "ethers": "^6.15.0",
+    "express": "^5.1.0",
+    "probot": "^13.4.7"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "*",
+    "@types/dotenv": "^6.1.1"
+  }
+}

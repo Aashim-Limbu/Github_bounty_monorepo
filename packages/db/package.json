@@ -1,0 +1,22 @@
+{
+  "name": "@repo/db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true,
+  "exports": {
+    "./prisma": "./src/index.ts",
+    "./bounty": "./src/bounty/index.ts",
+    "./user": "./src/user/index.ts"
+  },
+  "prisma": {
+    "schema": "prisma/schema"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.13.0",
+    "@prisma/extension-accelerate": "^2.0.2"
+  }
+}
