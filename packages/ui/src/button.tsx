@@ -1,5 +1,5 @@
 "use client";
-
+// This file is part of the Github Bounty Monorepo use client
 import { ReactNode } from "react";
 
 interface ButtonProps {
